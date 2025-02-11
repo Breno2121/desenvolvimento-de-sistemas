@@ -14,27 +14,37 @@ import Exercicio12 from './Exercicio12';
 import Exercicio13 from './Exercicio13';
 import Exercicio14 from './Exercicio14';
 import Exercicio15 from './Exercicio15';
+import Exercicio16 from './Exercicio16';
+import Exercicio17 from './Exercicio17';
+import Exercicio18 from './Exercicio18';
+import Exercicio19 from './Exercicio19';
+import Exercicio20 from './Exercicio20';
 
-var opcao = leia.keyInSelect(["Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4",
- "Exercicio 5", "Exercicio 6", "Exercicio 7", "Exercicio 8", "Exercicio 9", "Exercicio 10",
-  "Exercicio 11", "Exercicio 12", "Exercicio 13", "Exercicio 14", "Exercicio15"]) + 1;
+var opcao = leia.keyInSelect(["Exercicio 1", "Exercicio 2", "Exercicio 3", "Exercicio 4", "Exercicio 5", "Exercicio 6", "Exercicio 7", "Exercicio 8",
+  "Exercicio 9", "Exercicio 10", "Exercicio 11", "Exercicio 12", "Exercicio 13", "Exercicio 14", "Exercicio15", "Exercicio 16", "Exercicio 17",
+  "Exercicio 18", "Exercicio 19", "Exercicio 20",]) + 1;
 
 const exercicios = {
-    1: Exercicio01,
-    2: Exercicio02,
-    3: Exercicio03,
-    4: Exercicio04,
-    5: Exercicio05,
-    6: Exercicio06,
-    7: Exercicio07,
-    8: Exercicio08,
-    9: Exercicio09,
-    10: Exercicio10,
-    11: Exercicio11,
-    12: Exercicio12,
-    13: Exercicio13,
-    14: Exercicio14,
-    15: Exercicio15
-} as { [key: number]: {} => void};
+  1: Exercicio01,
+  2: Exercicio02,
+  3: Exercicio03,
+  4: Exercicio04,
+  5: Exercicio05,
+  6: Exercicio06,
+  7: Exercicio07,
+  8: Exercicio08,
+  9: Exercicio09,
+  10: Exercicio10,
+  11: Exercicio11,
+  12: Exercicio12,
+  13: Exercicio13,
+  14: Exercicio14,
+  15: Exercicio15,
+  16: Exercicio16,
+  17: Exercicio17,
+  18: Exercicio18,
+  19: Exercicio19,
+  20: Exercicio20
+} as { [key: number]: () => void }
 
-exercicios{opcao}();
+exercicios[opcao]();

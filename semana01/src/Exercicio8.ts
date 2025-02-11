@@ -7,9 +7,9 @@ export default function Exercicio08(){
     if(opcao === 1){
         console.log("Obrigado, Voce doou R$10,00")
     } else if(opcao === 2){
-        console.log("Obrigado, Voce doou R$10,00")
+        console.log("Obrigado, Voce doou R$25,00")
     } else if(opcao === 3){
-        console.log("Obrigado, Voce doou R$10,00")
+        console.log("Obrigado, Voce doou R$50,00")
     } else {
         let valor = leia.questionFloat("Informe o valor que deseja doar: ")
         console.log("Obrigado, Voce doou R$", valor)
