@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de pessoas</h1>
+        <input type="text" id="name" placeholder="Nome completo"/>
+        <input type="number" id="age" placeholder="Idade"/>
+        <input type="text" id="email" placeholder="Email"/>
+        <input type="text" id="phone" placeholder="Telefone"/>
+        <input type="text" id="adress" placeholder="Endereco"/>
+        <input type="text" id="city" placeholder="cidade"/>
+        <button onclick="addPerson(event)">Adicionar</button>
+
+        <h2>Lista de pessoas</h2>
+        <div id="person-list"></div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

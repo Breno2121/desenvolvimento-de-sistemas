@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de frequência</title>
-    <link rel="stylesheet" href="Style.css" .css>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <h1>Grafico de frequências por Décadas</h1>
-        <div class="inputs">
-            <input type="text" id="name">
-            <button onclick="loadProfiles()">Buscar</button>
-        </div>
-        <div class="chart-container">
-            <canvas class="chart"></canvas>
-        </div>
+    <h1>Grafico de frequências por Décadas</h1>
+    <div class="inputs">
+        <input type="text" id="name" placeholder="Buscar um nome" />
+        <button onclick="loadNames()">Buscar</button>
     </div>
-
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
     <script src="Script.js"></script>
-
 </body>
 
 </html>
